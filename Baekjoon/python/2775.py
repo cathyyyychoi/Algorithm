@@ -1,4 +1,4 @@
-t = iut(input())
+t = int(input())
 
 for i in range(t):
     floor = int(input())
