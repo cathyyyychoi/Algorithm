@@ -19,4 +19,4 @@
 ### elective
 * assignments of elevtive class
 * basic functions of Python
- * Python
+  * Python
