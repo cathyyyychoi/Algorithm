@@ -15,3 +15,8 @@
 * kakao coding test
 * monthly code challenge
   * Python
+
+### elective
+* assignments of elevtive class
+* basic functions of Python
+ * Python
