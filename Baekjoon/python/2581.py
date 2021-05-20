@@ -1,5 +1,3 @@
-M = int(input())
-N = int(input())
 num_list = []
     
 def f_2581(M, N):
@@ -15,11 +13,6 @@ def f_2581(M, N):
 
             
     if len(num_list) != 0:
-        print(sum(num_list))
-        print(num_list[0])
+        return(sum(num_list), num_list[0])
     else:
-        print(-1)
-
-    return 0
-
-f_2581(M, N)
+        return("-1")
