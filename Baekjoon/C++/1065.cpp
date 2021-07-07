@@ -1,25 +1,31 @@
 #include <iostream>
 using namespace std;
 
-bool check(int num){
-    if (num < 100)
-        return true;
-    int num1, num2, num3;
-    num1 = a % 100;
-    num2 = a % 100 / 10;
-    num3 = a / 100;
+int check(int num) {
+    int num1, num10, num100;
+    int count = 0;
 
-    if ((num3 - num2) == (num2 - num1))
-        return true;
-    return false;
+    if (num < 100) {
+        cout << num << endl;
+    }
+    else{
+        for (int i = 100; i <= num; i++) {
+            num100 = i / 100;
+            num10 = (i / 10) - ((i / 100) * 10);
+            num1 = i % 10;
+            if ((num100 - num10) == (num10 - num1)) {
+                count++;
+            }
+        }
+        cout << count+99 << endl;
+    }
+
+    return 0;
 }
 
-int main(){
-    int N;
-    int count = 0;
+int main() {
+    int N = 0;
     cin >> N;
-    for (int i = 1; i <= N; i++){
-        if (check(i))
-            count++;
-    }
+
+    check(N);
 }
