@@ -1,3 +1,4 @@
+'''
 def factorial(n):
     if n == 1:
         result = 1
@@ -7,3 +8,13 @@ def factorial(n):
 
 num = int(input())
 print(factorial(num))
+'''
+num = int(input())
+result = 1
+
+if num == 1:
+    result = 1
+elif num >= 2:
+    for i in range(1, num + 1):
+        result = result * i
+print(result)
