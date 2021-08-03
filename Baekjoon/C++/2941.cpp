@@ -12,7 +12,7 @@ int main(){
   for (int i = 0; i < croat.size(); i++){
     while (1){
       index = word.find(croat[i]);
-      if (index == string::npos)
+      if (index == string::npos) //if word.find caanot find anything, return string::npos
         break;
       word.replace(index, croat[i].length(), "#");
     }
